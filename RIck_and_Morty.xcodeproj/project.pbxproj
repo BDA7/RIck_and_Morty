@@ -9,21 +9,62 @@
 /* Begin PBXBuildFile section */
 		37816044275FF2F000A6E016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37816043275FF2F000A6E016 /* AppDelegate.swift */; };
 		37816046275FF2F000A6E016 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37816045275FF2F000A6E016 /* SceneDelegate.swift */; };
-		37816048275FF2F000A6E016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37816047275FF2F000A6E016 /* ViewController.swift */; };
+		37816048275FF2F000A6E016 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37816047275FF2F000A6E016 /* RootViewController.swift */; };
 		3781604B275FF2F100A6E016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37816049275FF2F100A6E016 /* Main.storyboard */; };
 		3781604D275FF2F200A6E016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3781604C275FF2F200A6E016 /* Assets.xcassets */; };
 		37816050275FF2F200A6E016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3781604E275FF2F200A6E016 /* LaunchScreen.storyboard */; };
+		37F21FF52789DFD6003F08EE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F21FF42789DFD6003F08EE /* SearchViewController.swift */; };
+		37F21FF72789DFFF003F08EE /* Interactior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F21FF62789DFFF003F08EE /* Interactior.swift */; };
+		37F21FF92789E02F003F08EE /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F21FF82789E02F003F08EE /* Presenter.swift */; };
+		37F21FFB2789E049003F08EE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F21FFA2789E049003F08EE /* Router.swift */; };
+		37F21FFD2789E084003F08EE /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F21FFC2789E084003F08EE /* Module.swift */; };
+		37F220002789E0B6003F08EE /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F21FFF2789E0B6003F08EE /* InformationViewController.swift */; };
+		37F220022789E0D2003F08EE /* InteractorInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F220012789E0D2003F08EE /* InteractorInformation.swift */; };
+		37F220042789E0F5003F08EE /* PresenterInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F220032789E0F5003F08EE /* PresenterInformation.swift */; };
+		37F220062789E10F003F08EE /* RouterInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F220052789E10F003F08EE /* RouterInformation.swift */; };
+		37F220082789E125003F08EE /* ModuleInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F220072789E125003F08EE /* ModuleInformation.swift */; };
+		37F2200B2789E148003F08EE /* SpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2200A2789E148003F08EE /* SpecialViewController.swift */; };
+		37F2200D2789E167003F08EE /* InteractorSpecial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2200C2789E167003F08EE /* InteractorSpecial.swift */; };
+		37F2200F2789E188003F08EE /* PresenterSpecial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2200E2789E188003F08EE /* PresenterSpecial.swift */; };
+		37F220112789E1A0003F08EE /* ModuleSpecial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F220102789E1A0003F08EE /* ModuleSpecial.swift */; };
+		37F220132789E1BA003F08EE /* SpecialPersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F220122789E1BA003F08EE /* SpecialPersonCollectionViewCell.swift */; };
+		37F220152789E1DE003F08EE /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F220142789E1DE003F08EE /* MyTableViewCell.swift */; };
+		37F220182789E25E003F08EE /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 37F220172789E25E003F08EE /* Realm */; };
+		37F2201A2789E25E003F08EE /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 37F220192789E25E003F08EE /* RealmSwift */; };
+		37F2201E2789E2F1003F08EE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2201D2789E2F1003F08EE /* Model.swift */; };
+		37F220202789E306003F08EE /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F2201F2789E306003F08EE /* Network.swift */; };
+		37F220222789E320003F08EE /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F220212789E320003F08EE /* ModelManager.swift */; };
+		37F220252789E377003F08EE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 37F220242789E377003F08EE /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37816040275FF2F000A6E016 /* RIck_and_Morty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RIck_and_Morty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37816043275FF2F000A6E016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37816045275FF2F000A6E016 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		37816047275FF2F000A6E016 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37816047275FF2F000A6E016 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		3781604A275FF2F100A6E016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3781604C275FF2F200A6E016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3781604F275FF2F200A6E016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37816051275FF2F200A6E016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F21FF42789DFD6003F08EE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		37F21FF62789DFFF003F08EE /* Interactior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactior.swift; sourceTree = "<group>"; };
+		37F21FF82789E02F003F08EE /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		37F21FFA2789E049003F08EE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		37F21FFC2789E084003F08EE /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		37F21FFF2789E0B6003F08EE /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		37F220012789E0D2003F08EE /* InteractorInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInformation.swift; sourceTree = "<group>"; };
+		37F220032789E0F5003F08EE /* PresenterInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInformation.swift; sourceTree = "<group>"; };
+		37F220052789E10F003F08EE /* RouterInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInformation.swift; sourceTree = "<group>"; };
+		37F220072789E125003F08EE /* ModuleInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleInformation.swift; sourceTree = "<group>"; };
+		37F2200A2789E148003F08EE /* SpecialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialViewController.swift; sourceTree = "<group>"; };
+		37F2200C2789E167003F08EE /* InteractorSpecial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorSpecial.swift; sourceTree = "<group>"; };
+		37F2200E2789E188003F08EE /* PresenterSpecial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterSpecial.swift; sourceTree = "<group>"; };
+		37F220102789E1A0003F08EE /* ModuleSpecial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleSpecial.swift; sourceTree = "<group>"; };
+		37F220122789E1BA003F08EE /* SpecialPersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialPersonCollectionViewCell.swift; sourceTree = "<group>"; };
+		37F220142789E1DE003F08EE /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		37F2201D2789E2F1003F08EE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		37F2201F2789E306003F08EE /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		37F220212789E320003F08EE /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F220252789E377003F08EE /* SnapKit in Frameworks */,
+				37F2201A2789E25E003F08EE /* RealmSwift in Frameworks */,
+				37F220182789E25E003F08EE /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +100,66 @@
 		37816042275FF2F000A6E016 /* RIck_and_Morty */ = {
 			isa = PBXGroup;
 			children = (
+				37F2201C2789E2DB003F08EE /* Helper */,
+				37F220092789E138003F08EE /* SpecialView */,
+				37F21FFE2789E09A003F08EE /* InfoView */,
+				37F21FF32789DFC1003F08EE /* SearchView */,
 				37816043275FF2F000A6E016 /* AppDelegate.swift */,
 				37816045275FF2F000A6E016 /* SceneDelegate.swift */,
-				37816047275FF2F000A6E016 /* ViewController.swift */,
+				37816047275FF2F000A6E016 /* RootViewController.swift */,
 				37816049275FF2F100A6E016 /* Main.storyboard */,
 				3781604C275FF2F200A6E016 /* Assets.xcassets */,
 				3781604E275FF2F200A6E016 /* LaunchScreen.storyboard */,
 				37816051275FF2F200A6E016 /* Info.plist */,
 			);
 			path = RIck_and_Morty;
+			sourceTree = "<group>";
+		};
+		37F21FF32789DFC1003F08EE /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				37F21FF42789DFD6003F08EE /* SearchViewController.swift */,
+				37F21FF62789DFFF003F08EE /* Interactior.swift */,
+				37F21FF82789E02F003F08EE /* Presenter.swift */,
+				37F21FFA2789E049003F08EE /* Router.swift */,
+				37F21FFC2789E084003F08EE /* Module.swift */,
+				37F220142789E1DE003F08EE /* MyTableViewCell.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		37F21FFE2789E09A003F08EE /* InfoView */ = {
+			isa = PBXGroup;
+			children = (
+				37F21FFF2789E0B6003F08EE /* InformationViewController.swift */,
+				37F220012789E0D2003F08EE /* InteractorInformation.swift */,
+				37F220032789E0F5003F08EE /* PresenterInformation.swift */,
+				37F220052789E10F003F08EE /* RouterInformation.swift */,
+				37F220072789E125003F08EE /* ModuleInformation.swift */,
+			);
+			path = InfoView;
+			sourceTree = "<group>";
+		};
+		37F220092789E138003F08EE /* SpecialView */ = {
+			isa = PBXGroup;
+			children = (
+				37F2200A2789E148003F08EE /* SpecialViewController.swift */,
+				37F2200C2789E167003F08EE /* InteractorSpecial.swift */,
+				37F2200E2789E188003F08EE /* PresenterSpecial.swift */,
+				37F220102789E1A0003F08EE /* ModuleSpecial.swift */,
+				37F220122789E1BA003F08EE /* SpecialPersonCollectionViewCell.swift */,
+			);
+			path = SpecialView;
+			sourceTree = "<group>";
+		};
+		37F2201C2789E2DB003F08EE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				37F2201D2789E2F1003F08EE /* Model.swift */,
+				37F2201F2789E306003F08EE /* Network.swift */,
+				37F220212789E320003F08EE /* ModelManager.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +178,11 @@
 			dependencies = (
 			);
 			name = RIck_and_Morty;
+			packageProductDependencies = (
+				37F220172789E25E003F08EE /* Realm */,
+				37F220192789E25E003F08EE /* RealmSwift */,
+				37F220242789E377003F08EE /* SnapKit */,
+			);
 			productName = RIck_and_Morty;
 			productReference = 37816040275FF2F000A6E016 /* RIck_and_Morty.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +211,10 @@
 				Base,
 			);
 			mainGroup = 37816037275FF2F000A6E016;
+			packageReferences = (
+				37F220162789E25E003F08EE /* XCRemoteSwiftPackageReference "realm-swift" */,
+				37F220232789E377003F08EE /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 37816041275FF2F000A6E016 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +242,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37816048275FF2F000A6E016 /* ViewController.swift in Sources */,
+				37F220152789E1DE003F08EE /* MyTableViewCell.swift in Sources */,
+				37F21FF92789E02F003F08EE /* Presenter.swift in Sources */,
+				37F21FF52789DFD6003F08EE /* SearchViewController.swift in Sources */,
+				37F2200B2789E148003F08EE /* SpecialViewController.swift in Sources */,
+				37F220132789E1BA003F08EE /* SpecialPersonCollectionViewCell.swift in Sources */,
+				37F220202789E306003F08EE /* Network.swift in Sources */,
+				37F220042789E0F5003F08EE /* PresenterInformation.swift in Sources */,
+				37F220222789E320003F08EE /* ModelManager.swift in Sources */,
+				37F21FF72789DFFF003F08EE /* Interactior.swift in Sources */,
+				37F21FFB2789E049003F08EE /* Router.swift in Sources */,
+				37F220062789E10F003F08EE /* RouterInformation.swift in Sources */,
+				37F220112789E1A0003F08EE /* ModuleSpecial.swift in Sources */,
+				37816048275FF2F000A6E016 /* RootViewController.swift in Sources */,
+				37F21FFD2789E084003F08EE /* Module.swift in Sources */,
+				37F2200D2789E167003F08EE /* InteractorSpecial.swift in Sources */,
+				37F2200F2789E188003F08EE /* PresenterSpecial.swift in Sources */,
 				37816044275FF2F000A6E016 /* AppDelegate.swift in Sources */,
+				37F2201E2789E2F1003F08EE /* Model.swift in Sources */,
+				37F220022789E0D2003F08EE /* InteractorInformation.swift in Sources */,
 				37816046275FF2F000A6E016 /* SceneDelegate.swift in Sources */,
+				37F220002789E0B6003F08EE /* InformationViewController.swift in Sources */,
+				37F220082789E125003F08EE /* ModuleInformation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,7 +417,6 @@
 				INFOPLIST_FILE = RIck_and_Morty/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +444,6 @@
 				INFOPLIST_FILE = RIck_and_Morty/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,6 +481,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37F220162789E25E003F08EE /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		37F220232789E377003F08EE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37F220172789E25E003F08EE /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37F220162789E25E003F08EE /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		37F220192789E25E003F08EE /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37F220162789E25E003F08EE /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		37F220242789E377003F08EE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37F220232789E377003F08EE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37816038275FF2F000A6E016 /* Project object */;
 }
