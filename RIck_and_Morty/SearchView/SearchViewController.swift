@@ -111,7 +111,7 @@ extension SearchViewController {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let info = searchRequestModel?.results[indexPath.row]
+        let info = model[indexPath.row]
         interactor?.action(with: .routerUses(character: info))
     }
 
