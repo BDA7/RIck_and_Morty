@@ -15,14 +15,14 @@ enum SpecialInteractorAction {
 
 protocol InteractorSpecialProtocol {
     var presenter: PresenterSpecialProtocol? { get set }
-    var model: ModelManagerProtocol? { get set }
+    var modelManager: ModelManagerProtocol? { get set }
     func action(with: SpecialInteractorAction)
 }
 
 
 final class InteractorSpecial: InteractorSpecialProtocol {
     var presenter: PresenterSpecialProtocol?
-    var model: ModelManagerProtocol?
+    var modelManager: ModelManagerProtocol?
 }
 
 // MARK: - Actions Interactor
@@ -40,16 +40,13 @@ extension InteractorSpecial  {
     }
 
     func gettingData() {
-        guard let items = model?.gettingData() else { return }
+        guard let items = modelManager?.gettingData() else { return }
         presenter?.dataload(data: items)
-        
     }
 
-    func viewIsReady() {
-        print("Special view is ready")
-    }
+    func viewIsReady() {}
 
     func deleteAll() {
-        model?.deleteAll()
+        modelManager?.deleteAll()
     }
 }

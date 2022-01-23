@@ -28,7 +28,6 @@ class SpecialPersonCollectionViewCell: UICollectionViewCell {
 
     lazy var name: UILabel = {
         let label = UILabel()
-        label.text = "HELLO"
         label.backgroundColor = .backColor
         label.textColor = .letterColor
         label.textAlignment = .center

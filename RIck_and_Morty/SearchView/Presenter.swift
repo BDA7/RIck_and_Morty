@@ -9,7 +9,7 @@ import UIKit
 
 enum SpecialPresenterAction {
     case dataUpdate(model: [Character]?, ids: [Int])
-    case initCell(button: UIButton, choice: Bool)
+//    case initCell(button: UIButton, choice: Bool)
 }
 
 protocol PresenterProtocol: AnyObject {
@@ -24,8 +24,8 @@ final class Presenter: PresenterProtocol {
 
     func action(with: SpecialPresenterAction) {
         switch with {
-        case .initCell(let button, let choice):
-            initCell(button: button, choice: choice)
+//        case .initCell(let button, let choice):
+//            initCell(button: button, choice: choice)
         case .dataUpdate(model: let model, ids: let ids):
             dataUpdate(model: model, ids: ids)
         }
@@ -45,13 +45,5 @@ extension Presenter {
             }
         }
         view?.action(with: .viewUpdate(newModel: searchNew))
-    }
-
-    func initCell(button: UIButton, choice: Bool) {
-        if choice == false {
-            button.setImage(UIImage(systemName: "star"), for: .normal)
-        } else {
-            button.setImage(UIImage(systemName: "star.fill"), for: .normal)
-        }
     }
 }

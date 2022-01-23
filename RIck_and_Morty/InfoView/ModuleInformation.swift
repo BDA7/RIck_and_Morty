@@ -9,22 +9,16 @@ import UIKit
 class ModuleInformation {
     static func build(person: Character?) ->InformationViewController {
         let view = InformationViewController()
-        view.person = person
-
         let presenter = PresenterInformation()
         let interactor = InteractorInformation()
         let router = RouterInformation()
 
         presenter.view = view
-
         interactor.presenter = presenter
         interactor.router = router
-
         router.transitionhandler = view
-
         view.interactor = interactor
-        
-        
+        view.person = person
         return view
     }
 }

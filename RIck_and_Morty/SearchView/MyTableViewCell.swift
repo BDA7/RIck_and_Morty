@@ -15,13 +15,11 @@ class MyTableViewCell: UITableViewCell {
 
 // MARK: - Views for cell
     lazy var imageOfPerson: UIImageView = {
-        let image = UIImageView()
-        return image
+        return UIImageView()
     }()
 
     lazy var name: UILabel = {
         let label = UILabel()
-        label.text = "John"
         label.textColor = .letterColor
         label.textAlignment = .left
         label.font = UIFont(name: "Helvetica", size: 19)
@@ -56,7 +54,6 @@ class MyTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         contentView.backgroundColor = .secondBackColor
-
         setupContainer()
         
     }
@@ -70,13 +67,11 @@ extension MyTableViewCell {
         setupImage()
         setupName()
         setupButton()
-        
     }
 
     func setupImage() {
         container.addSubview(imageOfPerson)
         imageOfPerson.frame = CGRect(x: 0, y: 0, width: container.frame.height, height: container.frame.height)
-        
     }
 
     func setupName() {
@@ -107,12 +102,11 @@ extension MyTableViewCell {
         name.text = nameText
         imageOfPerson.load(link: img)
         if fill == true {
-            addToSpecial.setImage(UIImage(systemName: "star.fill"), for: .normal)
+            addToSpecial.setImage(UIImage(systemName: StringsConst.starFill), for: .normal)
         } else {
-            addToSpecial.setImage(UIImage(systemName: "star"), for: .normal)
+            addToSpecial.setImage(UIImage(systemName: StringsConst.starDefault), for: .normal)
         }
     }
-
     override func prepareForReuse() {
         super.prepareForReuse()
         imageView?.image = nil
@@ -121,7 +115,7 @@ extension MyTableViewCell {
 
     @objc func addToButton(_ sender: Any?) {
         guard let id = id else { return }
-        guard let del = delegate?.action(with: .actionPerson(id: id, name: name.text ?? " ", image: imageOfPerson.image, button: addToSpecial)) else { return }
+        guard (delegate?.action(with: .actionPerson(id: id, name: name.text ?? " ", image: imageOfPerson.image, button: addToSpecial))) != nil else { return }
     }
 }
 

@@ -7,8 +7,6 @@
 import UIKit
 import RealmSwift
 
-
-
 class PersonModel: Object {
     @objc dynamic var id = Int()
     @objc dynamic var name = ""

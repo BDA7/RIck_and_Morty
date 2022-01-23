@@ -22,17 +22,14 @@ protocol ViewProtocol: AnyObject {
 // MARK: - Setup SearchController
 final class SearchViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ViewProtocol {
     var interactor: InteractorProtocol?
-
     var searchRequestModel: SearchRequestModel?
     var model = [Character]()
-
     let searchController = UISearchController(searchResultsController: nil)
-
-    var textForHttp = ""
 
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(MyTableViewCell.self, forCellReuseIdentifier: NSStringFromClass(MyTableViewCell.self))
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: NSStringFromClass(UITableViewCell.self))
         tableView.delegate = self
         tableView.dataSource = self
         return tableView
@@ -80,7 +77,6 @@ extension SearchViewController {
 
     func setupTable() {
         view.addSubview(tableView)
-
         tableView.backgroundColor = .secondBackColor
         tableView.snp.makeConstraints { make in
             make.top.equalToSuperview()
@@ -97,11 +93,12 @@ extension SearchViewController {
 
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(MyTableViewCell.self), for: indexPath) as! MyTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(MyTableViewCell.self), for: indexPath) as? MyTableViewCell else {
+            return tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(UITableViewCell.self), for: indexPath)
+        }
+
         let cellInput = model[indexPath.row]
-
         cell.delegate = self
-
         cell.configure(id: cellInput.id, nameText: cellInput.name, img: cellInput.image, fill: cellInput.isHaving ?? false)
         return cell
     }
@@ -130,10 +127,10 @@ extension SearchViewController: UISearchBarDelegate {
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         let stx = searchText.replacingOccurrences(of: " ", with: "")
-        self.textForHttp = stx
+        interactor?.action(with: .setQueryText(text: stx))
     }
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        interactor?.action(with: .searchRequest(url: textForHttp))
+        interactor?.action(with: .searchRequest)
     }
 }
 

@@ -15,14 +15,10 @@ class InformationViewController: UIViewController {
     var person: Character?
 
     lazy var imagePerson: UIImageView = {
-        let image = UIImageView()
-        return image
+        return UIImageView()
     }()
-
     lazy var name: UILabel = {
-        let label = UILabel()
-        label.text = "RICK Sanchez"
-        
+        let label = UILabel()        
         label.textColor = .letterColor
         label.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         label.font = UIFont(name: "Helvetica", size: 30)
@@ -32,16 +28,13 @@ class InformationViewController: UIViewController {
 
     lazy var species: UILabel = {
         let label = UILabel()
-        label.text = "Species: "
         label.textColor = .letterColor
-        
         label.font = UIFont(name: "Helvetica", size: 20)
         return label
     }()
 
     lazy var status: UILabel = {
         let label = UILabel()
-        label.text = "Status: "
         label.textColor = .letterColor
         label.font = UIFont(name: "Helvetica", size: 20)
         return label
@@ -49,7 +42,6 @@ class InformationViewController: UIViewController {
 
     lazy var type: UILabel = {
         let label = UILabel()
-        label.text = "Type: "
         label.textColor = .letterColor
         label.font = UIFont(name: "Helvetica", size: 20)
         return label
@@ -80,7 +72,6 @@ extension InformationViewController: InformationIput {
         
         imagePerson.backgroundColor = UIColor.black.withAlphaComponent(0.1)
     }
-// добавть имя в титул, а это удалить
     func setupName() {
         view.addSubview(name)
         name.text = person?.name
@@ -94,7 +85,7 @@ extension InformationViewController: InformationIput {
 
     func setupSpec() {
         view.addSubview(species)
-        species.text = species.text! + (person?.species ?? "")
+        species.text = StringsConst.species + (person?.species ?? "NONE")
         species.snp.makeConstraints { make in
             make.top.equalTo(status.snp.bottom)
             make.left.equalToSuperview()
@@ -116,7 +107,7 @@ extension InformationViewController: InformationIput {
 
     func setupType() {
         view.addSubview(type)
-        type.text = type.text! + (person?.type ?? "")
+        type.text = StringsConst.type + (person?.type ?? "NONE")
         type.snp.makeConstraints { make in
             make.top.equalTo(name.snp.bottom)
             make.left.equalToSuperview()
@@ -125,16 +116,16 @@ extension InformationViewController: InformationIput {
         }
     }
 
-
+// constants
     func choiceStatus() {
         guard let choicingStatus = person?.status else { return }
         switch choicingStatus {
         case "Alive":
-            status.text = status.text! + choicingStatus + " 🟢"
+            status.text = StringsConst.statusAlive
         case "Dead":
-            status.text = status.text! + choicingStatus + " 🔴"
+            status.text = StringsConst.statusDead
         default:
-            status.text = status.text! + "Unknow" + " ⚫️"
+            status.text = StringsConst.statusUnknow
         }
     }
 

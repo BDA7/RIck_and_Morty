@@ -19,7 +19,6 @@ extension Router {
     func goToInfoView(setting: Character) {
         let toViewController = ModuleInformation.build(person: setting)
         transitionHandler?.navigationController?.pushViewController(toViewController, animated: true)
-        
     }
 }
 

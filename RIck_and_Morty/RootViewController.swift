@@ -8,7 +8,6 @@
 import UIKit
 
 class RootViewController: UITabBarController, UISearchBarDelegate {
-
     let searchModule = Module.build()
     let specialModule = ModuleSpecial.build()
 
@@ -23,18 +22,20 @@ class RootViewController: UITabBarController, UISearchBarDelegate {
 
     func setupViews() {
         viewControllers = [
-            createNavControllers(for: searchModule, title: "Search", image: UIImage(systemName: "magnifyingglass")!, selectImage: UIImage(systemName: "magnifyingglass")!),
-            createNavControllers(for: specialModule, title: "Special", image: UIImage(systemName: "star")!, selectImage: UIImage(systemName: "star")!)
+            createNavControllers(for: searchModule, title: StringsConst.titleSearch, image: UIImage(systemName: StringsConst.searchImageOfTitle)!, selectImage: UIImage(systemName: StringsConst.searchImageOfTitle)!),
+            createNavControllers(for: specialModule, title: StringsConst.titleSpecial, image: UIImage(systemName: StringsConst.starDefault)!, selectImage: UIImage(systemName: StringsConst.starDefault)!)
         ]
     }
 
-    fileprivate func createNavControllers(for rootViewController: UIViewController, title: String, image: UIImage, selectImage: UIImage) -> UIViewController {
+    private func createNavControllers(for rootViewController: UIViewController,
+        title: String,
+        image: UIImage,
+        selectImage: UIImage) -> UIViewController {
         let navController = UINavigationController(rootViewController: rootViewController)
         rootViewController.title = title
         navController.tabBarItem.title = title
         navController.tabBarItem.image = image
         navController.tabBarItem.selectedImage = selectImage
-
         return navController
     }
 }

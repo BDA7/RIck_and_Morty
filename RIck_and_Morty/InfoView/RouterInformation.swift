@@ -15,6 +15,4 @@ final class RouterInformation {
 }
 
 extension RouterInformation: RouterInfoInput {
-    
-    
 }

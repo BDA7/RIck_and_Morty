@@ -18,7 +18,6 @@ protocol ViewSpecialProtocol {
 }
 
 class SpecialViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-
     var interactor: InteractorSpecialProtocol?
 
     var items: Results<PersonModel>?

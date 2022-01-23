@@ -9,18 +9,14 @@ import UIKit
 class ModuleSpecial {
     static func build() -> SpecialViewController {
         let viewController = SpecialViewController()
-
         let interactor = InteractorSpecial()
         let presenter = PresenterSpecial()
-        let model = ModelManager()
+        let modelManager = ModelManager()
 
         presenter.view = viewController
-
         interactor.presenter = presenter
-        interactor.model = model
-
+        interactor.modelManager = modelManager
         viewController.interactor = interactor
-
         return viewController
 
     }

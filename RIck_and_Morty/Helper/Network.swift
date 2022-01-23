@@ -12,7 +12,6 @@ class Network {
         URLSession.shared.dataTask(with: url) { (data, _, error) in
             DispatchQueue.main.async {
                 if let error = error {
-                    print("Error")
                     completion(.failure(error))
                     return
                 }
@@ -22,7 +21,6 @@ class Network {
                     let characters = try JSONDecoder().decode(SearchRequestModel.self, from: data)
                     completion(.success(characters))
                 } catch  let jsonError {
-                    print("Faled Decode \(jsonError)")
                     completion(.failure(jsonError))
                 }
             }

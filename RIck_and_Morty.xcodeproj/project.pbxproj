@@ -13,6 +13,7 @@
 		3781604B275FF2F100A6E016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37816049275FF2F100A6E016 /* Main.storyboard */; };
 		3781604D275FF2F200A6E016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3781604C275FF2F200A6E016 /* Assets.xcassets */; };
 		37816050275FF2F200A6E016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3781604E275FF2F200A6E016 /* LaunchScreen.storyboard */; };
+		37E9BA93279DB46200EADDF5 /* StringsConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9BA92279DB46200EADDF5 /* StringsConst.swift */; };
 		37F21FF52789DFD6003F08EE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F21FF42789DFD6003F08EE /* SearchViewController.swift */; };
 		37F21FF72789DFFF003F08EE /* Interactior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F21FF62789DFFF003F08EE /* Interactior.swift */; };
 		37F21FF92789E02F003F08EE /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F21FF82789E02F003F08EE /* Presenter.swift */; };
@@ -46,6 +47,7 @@
 		3781604C275FF2F200A6E016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3781604F275FF2F200A6E016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37816051275FF2F200A6E016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E9BA92279DB46200EADDF5 /* StringsConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsConst.swift; sourceTree = "<group>"; };
 		37F21FF42789DFD6003F08EE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		37F21FF62789DFFF003F08EE /* Interactior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactior.swift; sourceTree = "<group>"; };
 		37F21FF82789E02F003F08EE /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				37F2201D2789E2F1003F08EE /* Model.swift */,
 				37F2201F2789E306003F08EE /* Network.swift */,
 				37F220212789E320003F08EE /* ModelManager.swift */,
+				37E9BA92279DB46200EADDF5 /* StringsConst.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				37F21FF72789DFFF003F08EE /* Interactior.swift in Sources */,
 				37F21FFB2789E049003F08EE /* Router.swift in Sources */,
 				37F220062789E10F003F08EE /* RouterInformation.swift in Sources */,
+				37E9BA93279DB46200EADDF5 /* StringsConst.swift in Sources */,
 				37F220112789E1A0003F08EE /* ModuleSpecial.swift in Sources */,
 				37816048275FF2F000A6E016 /* RootViewController.swift in Sources */,
 				37F21FFD2789E084003F08EE /* Module.swift in Sources */,
@@ -423,7 +427,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "bda7.RIck-and-Morty";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -450,7 +454,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "bda7.RIck-and-Morty";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

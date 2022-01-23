@@ -29,7 +29,6 @@ class ModelManager: ModelManagerProtocol{
         for i in 0..<models.count {
             ids.append(models[i].id)
         }
-        print(ids)
         return ids
     }
 
@@ -41,7 +40,6 @@ class ModelManager: ModelManagerProtocol{
             return true
         }
     }
-
     func actionFromDB(id:Int, name: String, image: UIImage?) {
         if flag(name: name) == false {
             guard let image = image else { return }
